@@ -33,7 +33,7 @@ function About({ pageInfo }: Props) {
 
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
-          Here's a{" "}
+          Here is a{" "}
           <span className="decoration-[#F7AB0A]/50 underline">little</span>{" "}
           background
         </h4>
