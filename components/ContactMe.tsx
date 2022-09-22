@@ -15,7 +15,7 @@ type Inputs = {
   message: string;
 };
 
-function ContactMe({ pageInfo }: Props) {
+const ContactMe: React.FunctionComponent<Props> = ({ pageInfo }) => {
   const {
     register,
     handleSubmit,
@@ -100,6 +100,6 @@ function ContactMe({ pageInfo }: Props) {
       </div>
     </motion.div>
   );
-}
+};
 
 export default ContactMe;

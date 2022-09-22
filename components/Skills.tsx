@@ -7,7 +7,7 @@ type Props = {
   skills: SkillType[];
 };
 
-function Skills({ skills }: Props) {
+const Skills: React.FunctionComponent<Props> = ({ skills }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -36,6 +36,6 @@ function Skills({ skills }: Props) {
       </div>
     </motion.div>
   );
-}
+};
 
 export default Skills;

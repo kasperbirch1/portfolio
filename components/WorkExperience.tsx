@@ -7,7 +7,7 @@ type Props = {
   experiences: Experience[];
 };
 
-function WorkExperience({ experiences }: Props) {
+const WorkExperience: React.FunctionComponent<Props> = ({ experiences }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -27,6 +27,6 @@ function WorkExperience({ experiences }: Props) {
       </div>
     </motion.div>
   );
-}
+};
 
 export default WorkExperience;

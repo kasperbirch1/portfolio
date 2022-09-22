@@ -8,7 +8,7 @@ type Props = {
   projects: Project[];
 };
 
-function Projects({ projects }: Props) {
+const Projects: React.FunctionComponent<Props> = ({ projects }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -57,6 +57,6 @@ function Projects({ projects }: Props) {
       <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
     </motion.div>
   );
-}
+};
 
 export default Projects;

@@ -8,7 +8,7 @@ type Props = {
   socials: Social[];
 };
 
-const Header = ({ socials }: Props) => {
+const Header: React.FunctionComponent<Props> = ({ socials }) => {
   return (
     <header className="sticky top-0 flex items-start xl:items-center justify-between p-5 z-20 max-w-7xl mx-auto">
       <motion.div

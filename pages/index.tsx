@@ -22,7 +22,13 @@ type Props = {
   socials: Social[];
 };
 
-const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
+const Home: React.FunctionComponent<Props> = ({
+  projects,
+  skills,
+  pageInfo,
+  experiences,
+  socials,
+}) => {
   return (
     <div className="snap-y snap-mandatory h-screen overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 bg-[rgb(36,36,36)] text-white z-0">
       <Header socials={socials} />

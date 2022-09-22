@@ -9,7 +9,7 @@ type Props = {
   pageInfo: PageInfo;
 };
 
-function Hero({ pageInfo }: Props) {
+const Hero: React.FunctionComponent<Props> = ({ pageInfo }) => {
   const [text, count] = useTypewriter({
     words: ["<KasperBirch />"],
     loop: true,
@@ -52,6 +52,6 @@ function Hero({ pageInfo }: Props) {
       </div>
     </div>
   );
-}
+};
 
 export default Hero;

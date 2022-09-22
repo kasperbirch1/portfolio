@@ -12,11 +12,10 @@ type Data = {
   pageInfo: PageInfo;
 };
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
+const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
   const pageInfo: PageInfo = await sanityClient.fetch(pageInfoQuery);
 
   res.status(200).json({ pageInfo });
-}
+};
+
+export default handler;

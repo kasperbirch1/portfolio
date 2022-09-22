@@ -8,7 +8,7 @@ type Props = {
   directionLeft?: boolean;
 };
 
-function Skill({ skill, directionLeft }: Props) {
+const Skill: React.FunctionComponent<Props> = ({ skill, directionLeft }) => {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img
@@ -30,6 +30,6 @@ function Skill({ skill, directionLeft }: Props) {
       </div>
     </div>
   );
-}
+};
 
 export default Skill;

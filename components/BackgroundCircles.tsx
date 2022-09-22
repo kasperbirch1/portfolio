@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function BackgroundCircles() {
+const BackgroundCircles = () => {
   return (
     <motion.div
       className="relative flex justify-center items-center"
@@ -21,6 +21,6 @@ function BackgroundCircles() {
       <div className="rounded-full border border-[#333333] h-[800px] w-[800px] absolute mt-52" />
     </motion.div>
   );
-}
+};
 
 export default BackgroundCircles;
